@@ -1,0 +1,350 @@
+{
+    "components": [
+        {
+            "label": "Nom Adherent",
+            "tableView": true,
+            "key": "NOM_ADH",
+            "type": "textfield",
+            "input": true
+        },
+        {
+            "label": "Prenom Adherent",
+            "tableView": true,
+            "key": "PRENOM_ADH",
+            "type": "textfield",
+            "input": true
+        },
+        {
+            "label": "Date de naissance Adherent",
+            "format": "dd/MM/yyyy",
+            "tableView": false,
+            "enableMinDateInput": false,
+            "datePicker": {
+                "disableWeekends": false,
+                "disableWeekdays": false
+            },
+            "enableMaxDateInput": false,
+            "enableTime": false,
+            "key": "DATE_NACE_ADH",
+            "type": "datetime",
+            "input": true,
+            "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "language": "fr",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": false,
+                "noCalendar": false,
+                "format": "dd/MM/yyyy",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": false,
+                "minDate": null,
+                "disableWeekends": false,
+                "disableWeekdays": false,
+                "maxDate": null
+            }
+        },
+        {
+            "label": "N° de regime Adherent",
+            "mask": false,
+            "spellcheck": true,
+            "tableView": false,
+            "delimiter": false,
+            "requireDecimal": false,
+            "inputFormat": "plain",
+            "key": "REGIME_ADH",
+            "type": "number",
+            "input": true
+        },
+        {
+            "label": "Caisse de régime obligatoire Adherent",
+            "tableView": true,
+            "key": "CAISSE_ADH",
+            "type": "textfield",
+            "input": true
+        },
+        {
+            "label": "Voulez-vous ajouter un conjoint ?",
+            "optionsLabelPosition": "right",
+            "inline": false,
+            "tableView": false,
+            "values": [
+                {
+                    "label": "Oui",
+                    "value": "true",
+                    "shortcut": ""
+                },
+                {
+                    "label": "Non",
+                    "value": "false",
+                    "shortcut": ""
+                }
+            ],
+            "key": "partenaire",
+            "type": "radio",
+            "input": true
+        },
+        {
+            "tableView": false,
+            "key": "fieldSet",
+            "conditional": {
+                "show": true,
+                "when": "partenaire",
+                "eq": "true"
+            },
+            "type": "fieldset",
+            "label": "",
+            "input": false,
+            "components": [
+                {
+                    "label": "Nom Conjoint",
+                    "tableView": true,
+                    "key": "NOM_BENEF2",
+                    "type": "textfield",
+                    "input": true
+                },
+                {
+                    "label": "Prenom Conjoint",
+                    "tableView": true,
+                    "key": "PRENOM_BENEF2",
+                    "type": "textfield",
+                    "input": true
+                },
+                {
+                    "label": "Date de naissance Conjoint",
+                    "format": "dd/MM/yyyy",
+                    "tableView": false,
+                    "enableMinDateInput": false,
+                    "datePicker": {
+                        "disableWeekends": false,
+                        "disableWeekdays": false
+                    },
+                    "enableMaxDateInput": false,
+                    "enableTime": false,
+                    "key": "DATE_NACE_BENEF2",
+                    "type": "datetime",
+                    "input": true,
+                    "widget": {
+                        "type": "calendar",
+                        "displayInTimezone": "viewer",
+                        "language": "fr",
+                        "useLocaleSettings": false,
+                        "allowInput": true,
+                        "mode": "single",
+                        "enableTime": false,
+                        "noCalendar": false,
+                        "format": "dd/MM/yyyy",
+                        "hourIncrement": 1,
+                        "minuteIncrement": 1,
+                        "time_24hr": false,
+                        "minDate": null,
+                        "disableWeekends": false,
+                        "disableWeekdays": false,
+                        "maxDate": null
+                    }
+                },
+                {
+                    "label": "Sexe Conjoint",
+                    "widget": "choicesjs",
+                    "tableView": true,
+                    "data": {
+                        "values": [
+                            {
+                                "label": "",
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "selectThreshold": 0.3,
+                    "key": "S_BENEF2",
+                    "type": "select",
+                    "indexeddb": {
+                        "filter": {}
+                    },
+                    "input": true
+                },
+                {
+                    "label": "N° de regime Conjoint",
+                    "mask": false,
+                    "spellcheck": true,
+                    "tableView": false,
+                    "delimiter": false,
+                    "requireDecimal": false,
+                    "inputFormat": "plain",
+                    "key": "REGIME_BENEF2",
+                    "type": "number",
+                    "input": true
+                },
+                {
+                    "label": "Caisse de régime obligatoire Conjoint",
+                    "tableView": true,
+                    "key": "CAISSE_BENEF2",
+                    "type": "textfield",
+                    "input": true
+                }
+            ]
+        },
+        {
+            "label": "Voulez-vous ajouter des enfants ?",
+            "optionsLabelPosition": "right",
+            "inline": false,
+            "tableView": false,
+            "values": [
+                {
+                    "label": "Oui",
+                    "value": "true",
+                    "shortcut": ""
+                },
+                {
+                    "label": "Non",
+                    "value": "false",
+                    "shortcut": ""
+                }
+            ],
+            "key": "ouinonenfant",
+            "type": "radio",
+            "input": true
+        },
+        {
+            "label": "Enfant",
+            "reorder": false,
+            "addAnotherPosition": "bottom",
+            "defaultOpen": false,
+            "layoutFixed": false,
+            "enableRowGroups": false,
+            "noFirstRow": false,
+            "tableView": false,
+            "defaultValue": [
+                {
+                    "nomEnfant": "",
+                    "prenomEnfant": "",
+                    "dateDeNaissanceEnfant": "",
+                    "sexeEnfant": "",
+                    "rattachement": "",
+                    "autre": ""
+                }
+            ],
+            "key": "ENFANT",
+            "conditional": {
+                "show": true,
+                "when": "ouinonenfant",
+                "eq": "true"
+            },
+            "type": "datagrid",
+            "input": true,
+            "components": [
+                {
+                    "label": "Nom Enfant",
+                    "tableView": true,
+                    "key": "NOM_ENF",
+                    "type": "textfield",
+                    "input": true
+                },
+                {
+                    "label": "Prenom Enfant",
+                    "tableView": true,
+                    "key": "PRENOM_ENF",
+                    "type": "textfield",
+                    "input": true
+                },
+                {
+                    "label": "Date de Naissance Enfant",
+                    "format": "dd/MM/yyyy",
+                    "tableView": false,
+                    "enableMinDateInput": false,
+                    "datePicker": {
+                        "disableWeekends": false,
+                        "disableWeekdays": false
+                    },
+                    "enableMaxDateInput": false,
+                    "enableTime": false,
+                    "key": "DATE_NACE_ENF",
+                    "type": "datetime",
+                    "input": true,
+                    "widget": {
+                        "type": "calendar",
+                        "displayInTimezone": "viewer",
+                        "language": "fr",
+                        "useLocaleSettings": false,
+                        "allowInput": true,
+                        "mode": "single",
+                        "enableTime": false,
+                        "noCalendar": false,
+                        "format": "dd/MM/yyyy",
+                        "hourIncrement": 1,
+                        "minuteIncrement": 1,
+                        "time_24hr": false,
+                        "minDate": null,
+                        "disableWeekends": false,
+                        "disableWeekdays": false,
+                        "maxDate": null
+                    }
+                },
+                {
+                    "label": "Sexe Enfant",
+                    "widget": "choicesjs",
+                    "tableView": true,
+                    "data": {
+                        "values": [
+                            {
+                                "label": "",
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "selectThreshold": 0.3,
+                    "key": "S_ENF",
+                    "type": "select",
+                    "indexeddb": {
+                        "filter": {}
+                    },
+                    "input": true
+                },
+                {
+                    "label": "Rattachement",
+                    "widget": "choicesjs",
+                    "tableView": true,
+                    "data": {
+                        "values": [
+                            {
+                                "label": "",
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "selectThreshold": 0.3,
+                    "key": "REGIME_ENF.RATTACHE_BENEF",
+                    "type": "select",
+                    "indexeddb": {
+                        "filter": {}
+                    },
+                    "input": true
+                },
+                {
+                    "label": "autre",
+                    "hideLabel": true,
+                    "tableView": true,
+                    "key": "REGIME_ENF.AUTRE",
+                    "conditional": {
+                        "show": true,
+                        "when": "REGIME_ENF.RATTACHE_BENEF",
+                        "eq": "Autre :"
+                    },
+                    "type": "textfield",
+                    "input": true
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "label": "Submit",
+            "key": "submit",
+            "disableOnInvalid": true,
+            "input": true,
+            "tableView": false
+        }
+    ]
+}

@@ -1,0 +1,1181 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Testing\Templates\DOC1_MUTUELLE_KWSOFT.template">
+ <DataDefinition>
+  <ParamDef name="DATA" ref="\\Testing\Data\DOC1_MUTUELLE_KWSOFT.datamodel" dataMappingRef="" constantDataRef="">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ActionLink title="Formulaire Tableau" inputAreaGroupID="">
+    <Script><![CDATA[			var form = $context.FormIO.createForm('formio/tableau_adherent.formio');
+			var title="Formulaire Tableau";
+			var options={'title' : title,
+					'height' : '800',
+					'width' : 1500};
+				$context.showForm(form, $DATA.P_GARANTIR, options);]]></Script>
+   </ActionLink>
+   <ActionLink title="Formulaire Signature" inputAreaGroupID="">
+    <Script><![CDATA[				var form = $context.FormIO.createForm('formio/signature.formio');
+				var title="Formulaire Signature";
+				var options={'title' : title,
+						'height' : '500',
+						'width' : 1000};
+					$context.showForm(form, $DATA, options);]]></Script>
+   </ActionLink>
+  </GuideArea>
+  <InputArea></InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="DOC1_MUTUELLE_KWSOFT"></Style>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Coordonnées</RegionRef>
+    </Style>
+    <Par>
+     <Style>
+      <Align>center</Align>
+     </Style>
+     <Span>
+      <Style>
+       <FontSize>10.0pt</FontSize>
+      </Style>
+      <Text>Coordonnées de l’entreprise</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Style>
+      <Align>left</Align>
+     </Style>
+     <Span>
+      <Style>
+       <FontSize>10.0pt</FontSize>
+      </Style>
+      <Text>Raison sociale :</Text>
+      <Data>$DATA.NOM_ENTREPRISE</Data>
+      <Text>
+Adresse :</Text>
+      <Data>$DATA.ADRESSE_ENTREPRISE</Data>
+      <Text>
+Code postal : </Text>
+      <Data>$DATA.CP_ENTREPRISE</Data>
+      <Text>
+Ville :</Text>
+      <Data>$DATA.VILLE_ENTREPRISE</Data>
+      <Text>
+SIRET :</Text>
+      <Data>$DATA.SIRET_ENTREPRISE</Data>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <Container>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>18.0pt</FontSize>
+      </Style>
+      <Text>BULLETIN D’ADHÉSION SALARIÉ</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>Date d’effet demandée </Text>
+      <Data editable="true">$DATA.DATE_EFFET</Data>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>N° du contrat</Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text> </Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>(obligatoire)</Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text> </Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>: </Text>
+      <Data>$DATA.N_CONTRACT</Data>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>IDENTIFICATION DE L’ADHÉRENT </Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Table>
+     <Columns></Columns>
+     <Row>
+      <Cell>
+       <Style>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Civilité </Text>
+          <InlineRadioButton valueIndex="0" groupId="genreid" dataNode="$DATA.ID_ADHERENT.CIVILITE"></InlineRadioButton>
+          <Text> M. </Text>
+          <InlineRadioButton valueIndex="1" groupId="genreid" dataNode="$DATA.ID_ADHERENT.CIVILITE"></InlineRadioButton>
+          <Text> Mme Nom </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.NOM</Data>
+          <Text> Nom de naissance </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.NOM_NAISSANCE</Data>
+          <Text> Prénom </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.PRENOM</Data>
+          <Text>
+Adresse </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.ADRESSE</Data>
+          <Text> Code postal </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.CODE_POSTAL</Data>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell>
+       <Style>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Commune </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.COMMUNE</Data>
+          <Text> Tél. </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.TEL</Data>
+          <Text> Tél. portable </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.TEL_PORTABLE</Data>
+          <Text>
+E-mail </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.E_MAIL</Data>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell>
+       <Style>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Situation familiale </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.SIT_FAMILIALE</Data>
+          <Text> Profession </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.PROFESSION</Data>
+          <Text> Date d’embauche </Text>
+          <Data editable="true">$DATA.ID_ADHERENT.DATE_EMBAUCHE</Data>
+          <Text> Catégorie </Text>
+          <Data>$DATA.ID_ADHERENT.CATEGORIE</Data>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+    </Table>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>GARANTIE . </Text>
+      <Data>$DATA.GARANTIE_ADHERENT</Data>
+      <Text>
+PERSONNES À GARANTIR</Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text> </Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>(voir les justificatifs à fournir)</Text>
+     </Span>
+    </Par>
+    <Numbering id="1">
+     <Style>
+      <Levels>
+       <Level number="1" firstLineIndent="0.0cm" indent="0.0cm">
+        <Text pattern="%1"></Text>
+        <Tab position="0.2cm" tabType="left" underlineStyle="default"></Tab>
+       </Level>
+      </Levels>
+     </Style>
+    </Numbering>
+    <Table>
+     <Columns>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>33966.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+     </Columns>
+     <Row>
+      <Cell>
+       <Style>
+        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+          <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+          <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Nom </Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+          <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Prénom </Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+          <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Date
+de naissance </Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+          <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Sexe (1) </Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+          <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>N° régime </Text>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>obligatoire
+</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+          <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Caisse de
+régime
+obligatoire (2)</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell>
+       <Container>
+        <Par>
+         <Style>
+          <Align>left</Align>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Adhérent
+</Text>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>(bénéficiaire 1)</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Data>$DATA.P_GARANTIR.NOM_ADH</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Data>$DATA.P_GARANTIR.PRENOM_ADH</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Data>$DATA.P_GARANTIR.DATE_NACE_ADH</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Data>$DATA.P_GARANTIR.S_ADH</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Data>$DATA.P_GARANTIR.REGIME_ADH</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Container>
+        <Par>
+         <Style>
+          <Align>center</Align>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Data>$DATA.P_GARANTIR.CAISSE_ADH</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <TablePart>
+      <VisibleIf><![CDATA[$DATA.P_GARANTIR.partenaire.valueOf()]]></VisibleIf>
+      <DataDefinition></DataDefinition>
+      <Row>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>left</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Text>Conjoint/
+pacsé/
+concubin
+</Text>
+          </Span>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Text>(bénéficiaire 2)</Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$DATA.P_GARANTIR.NOM_BENEF2</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$DATA.P_GARANTIR.PRENOM_BENEF2</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$DATA.P_GARANTIR.DATE_NACE_BENEF2</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$DATA.P_GARANTIR.S_BENEF2</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$DATA.P_GARANTIR.REGIME_BENEF2</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$DATA.P_GARANTIR.CAISSE_BENEF2</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+      </Row>
+     </TablePart>
+     <TablePart>
+      <ForEach><![CDATA[$DATA.P_GARANTIR.ENFANT]]></ForEach>
+      <DataDefinition></DataDefinition>
+      <Row>
+       <Cell>
+        <Container>
+         <Par>
+          <NumberingRef numberingId="1" level="1"></NumberingRef>
+          <Style>
+           <Align>left</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Text>Enfant</Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$ENFANT.NOM_ENF</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$ENFANT.PRENOM_ENF</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$ENFANT.DATE_NACE_ENF</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$ENFANT.S_ENF</Data>
+           <Text></Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <Par>
+          <Style>
+           <Align>center</Align>
+          </Style>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Text>Rattaché </Text>
+          </Span>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$ENFANT.REGIME_ENF.RATTACHE_BENEF</Data>
+          </Span>
+          <Span>
+           <Style>
+            <FontSize>6.0pt</FontSize>
+           </Style>
+           <Data>$ENFANT.REGIME_ENF.AUTRE</Data>
+           <Text> </Text>
+          </Span>
+         </Par>
+        </Container>
+       </Cell>
+       <Cell>
+        <Container>
+         <ContainerPart>
+          <VisibleIf><![CDATA[$ENFANT.REGIME_ENF.RATTACHE_BENEF.valueOf()=="Bénéficiaire 1"]]></VisibleIf>
+          <DataDefinition></DataDefinition>
+          <Par>
+           <Style>
+            <Align>center</Align>
+           </Style>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Data>$DATA.P_GARANTIR.CAISSE_ADH</Data>
+            <Text></Text>
+           </Span>
+          </Par>
+         </ContainerPart>
+         <ContainerPart>
+          <VisibleIf><![CDATA[$ENFANT.REGIME_ENF.RATTACHE_BENEF.valueOf()=="Bénéficiaire 2"]]></VisibleIf>
+          <DataDefinition></DataDefinition>
+          <Par>
+           <Style>
+            <Align>center</Align>
+           </Style>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Data>$DATA.P_GARANTIR.CAISSE_BENEF2</Data>
+            <Text></Text>
+           </Span>
+          </Par>
+         </ContainerPart>
+        </Container>
+       </Cell>
+      </Row>
+     </TablePart>
+    </Table>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>Régime obligatoire de l’adhérent : </Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6500.0mpt</FontSize>
+       <TextColor>rgb(60,61,60)</TextColor>
+      </Style>
+      <Text></Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text> général  local  autre . . . . . . . / du conjoint  général  local  TNS/PI  autre . . . . . . . . . .</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>(1) Féminin = F - Masculin = M</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>(2) Recopier les codes de la zone « organisme gestionnaire » figurant sur votre attestation vitale échanges se feront en automatique avec le régime obligatoire.</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>MODALITE DE PAIEMENT</Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>
+Si prélèvement sur le compte bancaire de l’adhérent, précisez :</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>Périodicité souhaitée : </Text>
+      <InlineRadioButton valueIndex="0" groupId="peros" dataNode="$DATA.PERIODE_PAIEMENT"></InlineRadioButton>
+      <Text> Mensuelle </Text>
+      <InlineRadioButton valueIndex="1" groupId="peros" dataNode="$DATA.PERIODE_PAIEMENT"></InlineRadioButton>
+      <Text> Semestrielle </Text>
+      <InlineRadioButton valueIndex="2" groupId="peros" dataNode="$DATA.PERIODE_PAIEMENT"></InlineRadioButton>
+      <Text> Annuelle
+Jour souhaité : </Text>
+      <InlineRadioButton valueIndex="0" groupId="jours" dataNode="$DATA.JOUR_PAIEMENT"></InlineRadioButton>
+      <Text> le 5 </Text>
+      <InlineRadioButton valueIndex="1" groupId="jours" dataNode="$DATA.JOUR_PAIEMENT"></InlineRadioButton>
+      <Text> le 10 </Text>
+      <InlineRadioButton valueIndex="2" groupId="jours" dataNode="$DATA.JOUR_PAIEMENT"></InlineRadioButton>
+      <Text> le 15
+</Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>(Sans précision, celui-ci sera effectué au 5 de chaque mois)</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>JUSTIFICATIFS À FOURNIR Retournez-nous votre demande complétée et signée, accompagnée des justificatifs suivants :</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>5.0pt</FontSize>
+      </Style>
+      <Text>- photocopie de l’attestation papier d’ouverture de droit à votre Caisse de régime obligatoire récente pour chaque assuré. Si vous n’êtes pas en possession de votre attestation papier, elle peut être imprimée dans nos agences, sur simple présentation de la carte Vitale,
+- si enfant de plus de 20 ans dans l’une des situations suivantes : étudiant, apprenti, intérimaire, à la recherche d’un emploi, en contrat à durée déterminée, en contrat d’insertion professionnelle ou si enfant handicapé ayant un taux d’incapacité supérieur ou égal à 80 % reconnu par le régime d’Assurance maladie obligatoire français : fournir les justificatifs de la situation,
+- un RIB joint pour le versement de vos prestations,
+- si le mode de paiement « prélèvement » est choisi : un relevé d’identité bancaire, postal ou de Caisse d’épargne et le mandat de prélèvement SEPA rempli et signé.</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>5.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text>INFORMATIQUE ET LIBERTÉS</Text>
+     </Span>
+    </Par>
+    <Table>
+     <Columns></Columns>
+     <Row>
+      <Cell>
+       <Style>
+        <Margin top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Margin>
+        <Padding top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Padding>
+        <Border>
+         <Left width="1.0pt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="1.0pt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="1.0pt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="1.0pt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>Les informations recueillies sur ce bulletin font l’objet d’un traitement automatisé pour permettre la gestion de votre adhésion et l’affiliation de vos ayants droit. Les données « téléphone, téléphone portable, situation familiale, e-mail » sont demandées à titre facultatif, l’ensemble des autres données étant indispensable au traitement de votre et adhésion. Elles sont destinées à la mutuelle, aux organismes assureurs auprès desquels la mutuelle a souscrit un contrat collectif, aux éventuels sous-traitants et prestataires impliqués dans la gestion du contrat ainsi que le cas échéant à nos réassureurs et utilisées aux fins et selon les modalités de conservation et d’hébergement précisées</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Margin top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Margin>
+        <Padding top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Padding>
+        <Border>
+         <Left width="1.0pt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="1.0pt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="1.0pt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="1.0pt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>(y compris commerciale) du contrat ainsi que pour garantir les obligations légales de la Mutuelle (lutte contre les fraudes, lutte contre le blanchiment des capitaux et le financement du terrorisme). Vos informations personnelles pourront être utilisées ultérieurement à des fins de prospection commerciale par courriers postaux, téléphone, sauf si vous vous y opposez en cochant les cases ci-contre. Par ailleurs, vous pouvez également à tout moment vous inscrire sur la liste d’opposition au démarchage téléphonique (bloctel.gouv.fr). Conformément à la réglementation en vigueur, vous, ainsi que vos ayants droit, disposez d’un droit d’accès, de rectification ou de portabilité de vos données personnelles, et pouvez décider de leur sort après au règlement mutualiste et/ou à la notice d’information, de passation</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Margin top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Margin>
+        <Padding top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Padding>
+        <Border>
+         <Left width="1.0pt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="1.0pt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="1.0pt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="1.0pt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>et de gestion votre décès. Vous disposez en outre, pour des motifs légitimes d’un droit à la limitation des traitements, d’un droit au retrait de votre consentement, d’un droit à l’effacement et d’un droit d’opposition. Vous pouvez exercer vos droits auprès du Responsable Protection des données – Data Protection Officer – de la Mutuelle par mail àl’adresse XXXX ou par courrier postal adressé à XXXX en joignant à votre demande une copie de votre justificatif d’identité. En cas de réclamations relatives au traitement de vos données personnelles et à l’exercice de vos droits, vous pouvez saisir la Commission Nationale Informatique et Libertés (CNIL) 3 place de Fontenoy – TSA 80715 – 75334 Pari</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+    </Table>
+    <Table>
+     <Columns></Columns>
+     <Row>
+      <Cell>
+       <Style>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Fait le </Text>
+          <Data editable="true">$DATA.DATE_FAIT</Data>
+          <Text> à </Text>
+          <Data editable="true">$DATA.VILLE</Data>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+          </Style>
+          <Text>Signature de l’adhérent	</Text>
+         </Span>
+        </Par>
+        <Image>
+         <DataUri ifNotExist="omit" alternativeUri=""><![CDATA[$DATA.SIGNATURE]]></DataUri>
+         <Style>
+          <WrapText>start</WrapText>
+          <FillContainerWidth>true</FillContainerWidth>
+          <FillContainerHeight>false</FillContainerHeight>
+          <Stretch>keep_aspect_ratio</Stretch>
+         </Style>
+        </Image>
+       </Container>
+      </Cell>
+     </Row>
+    </Table>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

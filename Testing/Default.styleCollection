@@ -1,0 +1,5 @@
+<StyleCollection xmlns="urn:kwsoft:mtext:tonic:dom">
+ <SectionStyle name="DOC1_MUTUELLE_KWSOFT">
+  <PageLayouts parentRef="Layout\DOC1_MUTUELLE_KWSOFT.pageLayouts"></PageLayouts>
+ </SectionStyle>
+</StyleCollection>

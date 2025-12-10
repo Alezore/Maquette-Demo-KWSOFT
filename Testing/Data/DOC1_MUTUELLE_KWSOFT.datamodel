@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="NOM_ENTREPRISE"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="ADRESSE_ENTREPRISE"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="VILLE_ENTREPRISE"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="CP_ENTREPRISE"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="SIRET_ENTREPRISE"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="DATETIME"
+         hierarchical="FLAT"
+         multiple="false"
+         name="DATE_EFFET"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field="DATEFIELD"
+                     label=""
+                     operator="ANY"
+                     validation-type="DATE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Output date-format="d MMM y 'à' HH:mm:ss"
+                    date-style="2"
+                    date-type="DATE"
+                    use-current-locale="true"/>
+         </Format>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="N_CONTRACT"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false" name="ID_ADHERENT">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="CIVILITE"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="LIST">
+               <Values>
+                  <Value content="M." valId="1"/>
+                  <Value content="Mme" valId="2"/>
+               </Values>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="NOM"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="NOM_NAISSANCE"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="PRENOM"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="ADRESSE"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="CODE_POSTAL"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="COMMUNE"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="TEL"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="TEL_PORTABLE"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="E_MAIL"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="SIT_FAMILIALE"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="false"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="LIST">
+               <Values>
+                  <Value content="Célibataire" valId="1"/>
+                  <Value content="Marié(e)" valId="2"/>
+                  <Value content="Divorcé(e)" valId="3"/>
+                  <Value content="En concubinage" valId="4"/>
+               </Values>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="PROFESSION"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="DATE_EMBAUCHE"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="CATEGORIE"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="GARANTIE_ADHERENT"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false" name="P_GARANTIR">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="NOM_ADH"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="PRENOM_ADH"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="DATETIME"
+            hierarchical="FLAT"
+            multiple="false"
+            name="DATE_NACE_ADH"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="DATE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Output date-format="d MMM y 'à' HH:mm:ss"
+                       date-style="2"
+                       date-type="DATE"
+                       use-current-locale="true"/>
+            </Format>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="S_ADH"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script>var civ = $current.parent().parent().ID_ADHERENT.CIVILITE; 
+var genre = "";
+
+if (civ != null) {
+    var civTexte = String(civ).trim();
+    
+    if (civTexte === "M.") {
+        genre = "M";
+    } else if (civTexte === "Mme") {
+        genre = "F";
+    }
+}
+
+genre;</Script>
+         </Settings>
+      </Node>
+      <Node data-type="NUMBER"
+            hierarchical="FLAT"
+            multiple="false"
+            name="REGIME_ADH"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="CAISSE_ADH"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="BOOLEAN"
+            hierarchical="FLAT"
+            multiple="false"
+            name="partenaire"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="NOM_BENEF2"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="PRENOM_BENEF2"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="DATETIME"
+            hierarchical="FLAT"
+            multiple="false"
+            name="DATE_NACE_BENEF2"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="DATE">
+               <Values/>
+            </Validation>
+            <Format>
+               <Output date-format="d MMM y 'à' HH:mm:ss"
+                       date-style="2"
+                       date-type="DATE"
+                       use-current-locale="true"/>
+            </Format>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="S_BENEF2"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="LIST">
+               <Values>
+                  <Value content="M" valId="1"/>
+                  <Value content="F" valId="2"/>
+               </Values>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="NUMBER"
+            hierarchical="FLAT"
+            multiple="false"
+            name="REGIME_BENEF2"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="CAISSE_BENEF2"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="BOOLEAN"
+            hierarchical="FLAT"
+            multiple="false"
+            name="ouinonenfant"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="true" name="ENFANT">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="NOM_ENF"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="PRENOM_ENF"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="DATETIME"
+               hierarchical="FLAT"
+               multiple="false"
+               name="DATE_NACE_ENF"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="DATE"/>
+               <Format>
+                  <Output date-format="d MMM y 'à' HH:mm:ss"
+                          date-style="2"
+                          date-type="DATE"
+                          use-current-locale="true"/>
+               </Format>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="S_ENF"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="LIST">
+                  <Values>
+                     <Value content="M" valId="1"/>
+                     <Value content="F" valId="2"/>
+                  </Values>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node multiple="false" name="REGIME_ENF">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="RATTACHE_BENEF"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="LIST">
+                     <Values>
+                        <Value content="Bénéficiaire 1" valId="1"/>
+                        <Value content="Bénéficiaire 2" valId="2"/>
+                        <Value content="Autre :" valId="3"/>
+                     </Values>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="AUTRE"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+         </Node>
+      </Node>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="PERIODE_PAIEMENT"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="JOUR_PAIEMENT"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="DATETIME"
+         hierarchical="FLAT"
+         multiple="false"
+         name="DATE_FAIT"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="DATE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Output date-format="d MMM y 'à' HH:mm:ss"
+                    date-style="2"
+                    date-type="DATE"
+                    use-current-locale="true"/>
+         </Format>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="VILLE"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="SIGNATURE"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+</DataModel>
