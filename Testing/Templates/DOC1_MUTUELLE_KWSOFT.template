@@ -146,7 +146,7 @@ SIRET :</Text>
        <FontSize>6.0pt</FontSize>
       </Style>
       <Text>: </Text>
-      <Data>$DATA.N_CONTRACT</Data>
+      <Data editable="true">$DATA.N_CONTRACT</Data>
      </Span>
     </Par>
     <Par>
