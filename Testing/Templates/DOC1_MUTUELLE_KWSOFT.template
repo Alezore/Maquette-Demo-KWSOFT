@@ -2,6 +2,8 @@
  <DataDefinition>
   <ParamDef name="DATA" ref="\\Testing\Data\DOC1_MUTUELLE_KWSOFT.datamodel" dataMappingRef="" constantDataRef="">
    <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
   </ParamDef>
  </DataDefinition>
  <UIContribution>
@@ -34,6 +36,21 @@
  <Document>
   <Section>
    <Style parentName="DOC1_MUTUELLE_KWSOFT"></Style>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Logo</RegionRef>
+    </Style>
+    <ContainerPart>
+     <VisibleIf><![CDATA[$DATA.typemutuel.valueOf()=="KW"]]></VisibleIf>
+     <DataDefinition></DataDefinition>
+     <Image uri="mtx:Images/kwlogo1.png"></Image>
+    </ContainerPart>
+    <ContainerPart>
+     <VisibleIf><![CDATA[$DATA.typemutuel.valueOf()=="KW Mutuelle"]]></VisibleIf>
+     <DataDefinition></DataDefinition>
+     <Image uri="mtx:Images/kwlogo2.png"></Image>
+    </ContainerPart>
+   </StaticContainer>
    <StaticContainer>
     <Style>
      <RegionRef>Coordonnées</RegionRef>
@@ -71,6 +88,15 @@ Ville :</Text>
       <Text>
 SIRET :</Text>
       <Data>$DATA.SIRET_ENTREPRISE</Data>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>10.0pt</FontSize>
+      </Style>
+      <Text>Type : </Text>
+      <Data editable="true">$DATA.typemutuel</Data>
      </Span>
     </Par>
    </StaticContainer>
@@ -345,7 +371,7 @@ PERSONNES À GARANTIR</Text>
      <Row>
       <Cell>
        <Style>
-        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+        <BackgroundColor>rgb(137,204,102)</BackgroundColor>
        </Style>
        <Container>
         <Par>
@@ -364,7 +390,7 @@ PERSONNES À GARANTIR</Text>
       </Cell>
       <Cell>
        <Style>
-        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+        <BackgroundColor>rgb(137,204,102)</BackgroundColor>
        </Style>
        <Container>
         <Par>
@@ -383,7 +409,7 @@ PERSONNES À GARANTIR</Text>
       </Cell>
       <Cell>
        <Style>
-        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+        <BackgroundColor>rgb(137,204,102)</BackgroundColor>
        </Style>
        <Container>
         <Par>
@@ -402,7 +428,7 @@ PERSONNES À GARANTIR</Text>
       </Cell>
       <Cell>
        <Style>
-        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+        <BackgroundColor>rgb(137,204,102)</BackgroundColor>
        </Style>
        <Container>
         <Par>
@@ -422,7 +448,7 @@ de naissance </Text>
       </Cell>
       <Cell>
        <Style>
-        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+        <BackgroundColor>rgb(137,204,102)</BackgroundColor>
        </Style>
        <Container>
         <Par>
@@ -441,7 +467,7 @@ de naissance </Text>
       </Cell>
       <Cell>
        <Style>
-        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+        <BackgroundColor>rgb(137,204,102)</BackgroundColor>
        </Style>
        <Container>
         <Par>
@@ -467,7 +493,7 @@ de naissance </Text>
       </Cell>
       <Cell>
        <Style>
-        <BackgroundColor>rgb(172,201,143)</BackgroundColor>
+        <BackgroundColor>rgb(137,204,102)</BackgroundColor>
        </Style>
        <Container>
         <Par>
@@ -1167,14 +1193,36 @@ Jour souhaité : </Text>
       </Cell>
      </Row>
     </Table>
-    <Par>
-     <Span>
-      <Style>
-       <FontSize>6.0pt</FontSize>
-      </Style>
-      <Text></Text>
-     </Span>
-    </Par>
+    <ContainerPart>
+     <VisibleIf><![CDATA[$DATA.typemutuel.valueOf()=="KW"]]></VisibleIf>
+     <DataDefinition></DataDefinition>
+     <Par>
+      <Span>
+       <Style>
+        <FontSize>4.0pt</FontSize>
+       </Style>
+       <Text>KWS , mutuelle soumise aux dispositions du livre II du Code de la Mutualité, immatriculée au répertoire Sirene sous le numéro Siren XXX XXX XXX , numéro LEI XXXXXXXXXXXXXX. Siège social : 10 rue de la Liberté 95500 ICY 
+KWS est assurée par XXXXX XXXX XXX, FED Assistance soumise aux dispositions du livre II du code de la mutualité, immatriculée au répertoire Sirène sous le numéro SIREN XXX XXX XXX, 
+numéro LEI XXXXXXXXX. Siège social : 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique est assurée par YYYYY Assurances, siège social : 10 Allée des enfants rouges - 69002Lyon. 
+Société Anonyme au capital de 9 999 999 €. Entreprise régie par le Code des Assurances. RCS Lyon 000 000 000 B. Numéro LEI XXXXXXXXXXXX </Text>
+      </Span>
+     </Par>
+    </ContainerPart>
+    <ContainerPart>
+     <VisibleIf><![CDATA[$DATA.typemutuel.valueOf()=="KW Mutuelle"]]></VisibleIf>
+     <DataDefinition></DataDefinition>
+     <Par>
+      <Span>
+       <Style>
+        <FontSize>4.0pt</FontSize>
+       </Style>
+       <Text>KWS Mutuelle, mutuelle soumise aux dispositions du livre II du Code de la Mutualité, immatriculée au répertoire Sirene sous le numéro Siren XXX XXX XXX , numéro LEI XXXXXXXXXXXXXX. Siège social : 10 rue de la Liberté 95500 ICY 
+KWS Santé Services est assurée par XXXXX XXXX XXX, FED Assistance soumise aux dispositions du livre II du code de la mutualité, immatriculée au répertoire Sirène sous le numéro SIREN XXX XXX XXX, 
+numéro LEI XXXXXXXXX. Siège social : 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique est assurée par YYYYY Assurances, siège social : 10 Allée des enfants rouges - 69002Lyon. 
+Société Anonyme au capital de 9 999 999 €. Entreprise régie par le Code des Assurances. RCS Lyon 000 000 000 B. Numéro LEI XXXXXXXXXXXX </Text>
+      </Span>
+     </Par>
+    </ContainerPart>
    </Container>
   </Section>
  </Document>

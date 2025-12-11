@@ -3,6 +3,25 @@
    <Node data-type="TEXT"
          hierarchical="FLAT"
          multiple="false"
+         name="typemutuel"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="LIST">
+            <Values>
+               <Value content="KW" valId="1"/>
+               <Value content="KW Mutuelle" valId="2"/>
+            </Values>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
          name="NOM_ENTREPRISE"
          searchable="false">
       <Settings>
@@ -94,10 +113,11 @@
             <Values/>
          </Validation>
          <Format>
-            <Output date-format="d MMM y 'à' HH:mm:ss"
+            <Input date-format="dd/MM/yyyy"/>
+            <Output date-format="dd/MM/yyyy"
                     date-style="2"
                     date-type="DATE"
-                    use-current-locale="true"/>
+                    use-current-locale="false"/>
          </Format>
          <Script/>
       </Settings>
@@ -421,10 +441,11 @@
                <Values/>
             </Validation>
             <Format>
-               <Output date-format="d MMM y 'à' HH:mm:ss"
+               <Input date-format="dd/MM/yyyy"/>
+               <Output date-format="dd/MM/yyyy"
                        date-style="2"
                        date-type="DATE"
-                       use-current-locale="true"/>
+                       use-current-locale="false"/>
             </Format>
             <Script/>
          </Settings>
@@ -552,10 +573,11 @@ genre;</Script>
                <Values/>
             </Validation>
             <Format>
-               <Output date-format="d MMM y 'à' HH:mm:ss"
+               <Input date-format="dd/MM/yyyy"/>
+               <Output date-format="dd/MM/yyyy"
                        date-style="2"
                        date-type="DATE"
-                       use-current-locale="true"/>
+                       use-current-locale="false"/>
             </Format>
             <Script/>
          </Settings>
@@ -673,12 +695,15 @@ genre;</Script>
                            dialog-field=""
                            label=""
                            operator="ANY"
-                           validation-type="DATE"/>
+                           validation-type="DATE">
+                  <Values/>
+               </Validation>
                <Format>
-                  <Output date-format="d MMM y 'à' HH:mm:ss"
+                  <Input date-format="dd/MM/yyyy"/>
+                  <Output date-format="dd/MM/yyyy"
                           date-style="2"
                           date-type="DATE"
-                          use-current-locale="true"/>
+                          use-current-locale="false"/>
                </Format>
                <Script/>
             </Settings>
@@ -791,10 +816,11 @@ genre;</Script>
             <Values/>
          </Validation>
          <Format>
-            <Output date-format="d MMM y 'à' HH:mm:ss"
+            <Input date-format="dd/MM/yyyy"/>
+            <Output date-format="dd/MM/yyyy"
                     date-style="2"
                     date-type="DATE"
-                    use-current-locale="true"/>
+                    use-current-locale="false"/>
          </Format>
          <Script/>
       </Settings>
