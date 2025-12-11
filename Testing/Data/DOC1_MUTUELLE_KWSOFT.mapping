@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Testing\Data\DOC1_MUTUELLE_KWSOFT.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false"
+            name="/DOC1_MUTUELLE_KWSOFT"
+            xpath="/root/DOC1_MUTUELLE_KWSOFT"/>
+      <Rule copySubtree="true"
+            name="/DOC1_MUTUELLE_KWSOFT/ADRESSE_ENTREPRISE"
+            xpath="ADRESSE_ENTREPRISE"/>
+      <Rule copySubtree="true"
+            name="/DOC1_MUTUELLE_KWSOFT/CP_ENTREPRISE"
+            xpath="CP_ENTREPRISE"/>
+      <Rule copySubtree="true"
+            name="/DOC1_MUTUELLE_KWSOFT/DATE_EFFET"
+            xpath="DATE_EFFET"/>
+      <Rule copySubtree="true"
+            name="/DOC1_MUTUELLE_KWSOFT/GARANTIE_ADHERENT"
+            xpath="GARANTIE_ADHERENT"/>
+      <Rule copySubtree="true"
+            name="/DOC1_MUTUELLE_KWSOFT/NOM_ENTREPRISE"
+            xpath="NOM_ENTREPRISE"/>
+      <Rule copySubtree="true"
+            name="/DOC1_MUTUELLE_KWSOFT/SIRET_ENTREPRISE"
+            xpath="SIRET_ENTREPRISE"/>
+      <Rule copySubtree="true"
+            name="/DOC1_MUTUELLE_KWSOFT/VILLE_ENTREPRISE"
+            xpath="VILLE_ENTREPRISE"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

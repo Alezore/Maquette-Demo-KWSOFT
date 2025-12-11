@@ -1,0 +1,11 @@
+{
+  "DOC1_MUTUELLE_KWSOFT": {
+    "NOM_ENTREPRISE": "Entreprise Exemple SAS",
+    "ADRESSE_ENTREPRISE": "15 Avenue des Champs",
+    "VILLE_ENTREPRISE": "Paris",
+    "CP_ENTREPRISE": "75008",
+    "SIRET_ENTREPRISE": "123 456 789 00012",
+    "DATE_EFFET": "2023-01-01",
+    "GARANTIE_ADHERENT": "Formule Intégrale",
+  }
+}
