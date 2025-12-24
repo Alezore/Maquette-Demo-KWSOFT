@@ -56,6 +56,26 @@
      <RegionRef>Coordonnées</RegionRef>
     </Style>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>10.0pt</FontSize>
+        </Style>
+        <Text>Company Contact Details</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>10.0pt</FontSize>
+        </Style>
+        <Text>Coordonnées de l’entreprise</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Style>
       <Align>center</Align>
      </Style>
@@ -67,6 +87,52 @@
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>10.0pt</FontSize>
+        </Style>
+        <Text>Company Name:</Text>
+        <Data>$DATA.NOM_ENTREPRISE</Data>
+        <Text>
+Address:</Text>
+        <Data>$DATA.ADRESSE_ENTREPRISE</Data>
+        <Text>
+Postal Code: </Text>
+        <Data>$DATA.CP_ENTREPRISE</Data>
+        <Text>
+City:</Text>
+        <Data>$DATA.VILLE_ENTREPRISE</Data>
+        <Text>
+SIRET:</Text>
+        <Data>$DATA.SIRET_ENTREPRISE</Data>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>10.0pt</FontSize>
+        </Style>
+        <Text>Raison sociale :</Text>
+        <Data>$DATA.NOM_ENTREPRISE</Data>
+        <Text>
+Adresse :</Text>
+        <Data>$DATA.ADRESSE_ENTREPRISE</Data>
+        <Text>
+Code postal : </Text>
+        <Data>$DATA.CP_ENTREPRISE</Data>
+        <Text>
+Ville :</Text>
+        <Data>$DATA.VILLE_ENTREPRISE</Data>
+        <Text>
+SIRET :</Text>
+        <Data>$DATA.SIRET_ENTREPRISE</Data>
+       </Span>
+      </Translation>
+     </Translations>
      <Style>
       <Align>left</Align>
      </Style>
@@ -91,6 +157,28 @@ SIRET :</Text>
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>10.0pt</FontSize>
+        </Style>
+        <Text>Type : </Text>
+        <Data editable="true">$DATA.typemutuel</Data>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>10.0pt</FontSize>
+        </Style>
+        <Text>Type : </Text>
+        <Data editable="true">$DATA.typemutuel</Data>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>10.0pt</FontSize>
@@ -102,6 +190,26 @@ SIRET :</Text>
    </StaticContainer>
    <Container>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>18.0pt</FontSize>
+        </Style>
+        <Text>EMPLOYEE MEMBERSHIP FORM</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>18.0pt</FontSize>
+        </Style>
+        <Text>BULLETIN D’ADHÉSION SALARIÉ</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>18.0pt</FontSize>
@@ -126,6 +234,28 @@ SIRET :</Text>
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>Requested Effective Date </Text>
+        <Data editable="true">$DATA.DATE_EFFET</Data>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>Date d’effet demandée </Text>
+        <Data editable="true">$DATA.DATE_EFFET</Data>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -143,6 +273,76 @@ SIRET :</Text>
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>Contract No.</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text> </Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(mandatory)</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text> </Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>: </Text>
+        <Data editable="true">$DATA.N_CONTRACT</Data>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>N° du contrat</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text> </Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(obligatoire)</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text> </Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>: </Text>
+        <Data editable="true">$DATA.N_CONTRACT</Data>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -184,6 +384,26 @@ SIRET :</Text>
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>MEMBER IDENTIFICATION </Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>IDENTIFICATION DE L’ADHÉRENT </Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -213,6 +433,54 @@ SIRET :</Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Title </Text>
+            <InlineRadioButton valueIndex="0" groupId="genreid" dataNode="$DATA.ID_ADHERENT.CIVILITE"></InlineRadioButton>
+            <Text> Mr </Text>
+            <InlineRadioButton valueIndex="1" groupId="genreid" dataNode="$DATA.ID_ADHERENT.CIVILITE"></InlineRadioButton>
+            <Text> Ms Surname </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.NOM</Data>
+            <Text> Birth Name </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.NOM_NAISSANCE</Data>
+            <Text> First Name </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.PRENOM</Data>
+            <Text>
+Address </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.ADRESSE</Data>
+            <Text> Postal Code </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.CODE_POSTAL</Data>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Civilité </Text>
+            <InlineRadioButton valueIndex="0" groupId="genreid" dataNode="$DATA.ID_ADHERENT.CIVILITE"></InlineRadioButton>
+            <Text> M. </Text>
+            <InlineRadioButton valueIndex="1" groupId="genreid" dataNode="$DATA.ID_ADHERENT.CIVILITE"></InlineRadioButton>
+            <Text> Mme Nom </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.NOM</Data>
+            <Text> Nom de naissance </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.NOM_NAISSANCE</Data>
+            <Text> Prénom </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.PRENOM</Data>
+            <Text>
+Adresse </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.ADRESSE</Data>
+            <Text> Code postal </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.CODE_POSTAL</Data>
+           </Span>
+          </Translation>
+         </Translations>
          <Span>
           <Style>
            <FontSize>6.0pt</FontSize>
@@ -249,6 +517,42 @@ Adresse </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>City </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.COMMUNE</Data>
+            <Text> Tel. </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.TEL</Data>
+            <Text> Mobile </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.TEL_PORTABLE</Data>
+            <Text>
+E-mail </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.E_MAIL</Data>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Commune </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.COMMUNE</Data>
+            <Text> Tél. </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.TEL</Data>
+            <Text> Tél. portable </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.TEL_PORTABLE</Data>
+            <Text>
+E-mail </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.E_MAIL</Data>
+           </Span>
+          </Translation>
+         </Translations>
          <Span>
           <Style>
            <FontSize>6.0pt</FontSize>
@@ -279,6 +583,40 @@ E-mail </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Marital Status </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.SIT_FAMILIALE</Data>
+            <Text> Occupation </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.PROFESSION</Data>
+            <Text> Hire Date </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.DATE_EMBAUCHE</Data>
+            <Text> Category </Text>
+            <Data>$DATA.ID_ADHERENT.CATEGORIE</Data>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Situation familiale </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.SIT_FAMILIALE</Data>
+            <Text> Profession </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.PROFESSION</Data>
+            <Text> Date d’embauche </Text>
+            <Data editable="true">$DATA.ID_ADHERENT.DATE_EMBAUCHE</Data>
+            <Text> Catégorie </Text>
+            <Data>$DATA.ID_ADHERENT.CATEGORIE</Data>
+           </Span>
+          </Translation>
+         </Translations>
          <Span>
           <Style>
            <FontSize>6.0pt</FontSize>
@@ -298,6 +636,56 @@ E-mail </Text>
      </Row>
     </Table>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>COVERAGE . </Text>
+        <Data>$DATA.GARANTIE_ADHERENT</Data>
+        <Text>
+PERSONS TO BE COVERED</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text> </Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(see supporting documents required)</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>GARANTIE . </Text>
+        <Data>$DATA.GARANTIE_ADHERENT</Data>
+        <Text>
+PERSONNES À GARANTIR</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text> </Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(voir les justificatifs à fournir)</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -394,6 +782,26 @@ PERSONNES À GARANTIR</Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Surname </Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Nom </Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Style>
           <Align>center</Align>
           <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
@@ -413,6 +821,26 @@ PERSONNES À GARANTIR</Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>First Name </Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Prénom </Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Style>
           <Align>center</Align>
           <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
@@ -432,6 +860,28 @@ PERSONNES À GARANTIR</Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Date
+of Birth </Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Date
+de naissance </Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Style>
           <Align>center</Align>
           <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
@@ -452,6 +902,26 @@ de naissance </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Sex (1) </Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Sexe (1) </Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Style>
           <Align>center</Align>
           <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
@@ -471,6 +941,40 @@ de naissance </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Scheme No. </Text>
+           </Span>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>mandatory
+</Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>N° régime </Text>
+           </Span>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>obligatoire
+</Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Style>
           <Align>center</Align>
           <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
@@ -497,6 +1001,30 @@ de naissance </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Mandatory
+Scheme
+Fund (2)</Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Caisse de
+régime
+obligatoire (2)</Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Style>
           <Align>center</Align>
           <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
@@ -517,6 +1045,40 @@ obligatoire (2)</Text>
       <Cell>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Member
+</Text>
+           </Span>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>(beneficiary 1)</Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Adhérent
+</Text>
+           </Span>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>(bénéficiaire 1)</Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Style>
           <Align>left</Align>
          </Style>
@@ -640,6 +1202,44 @@ obligatoire (2)</Text>
        <Cell>
         <Container>
          <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="GB" variant=""></Language>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Text>Spouse/
+Partner/
+Cohabitant
+</Text>
+            </Span>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Text>(beneficiary 2)</Text>
+            </Span>
+           </Translation>
+           <Translation>
+            <Language language="fr" country="FR" variant=""></Language>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Text>Conjoint/
+pacsé/
+concubin
+</Text>
+            </Span>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Text>(bénéficiaire 2)</Text>
+            </Span>
+           </Translation>
+          </Translations>
           <Style>
            <Align>left</Align>
           </Style>
@@ -766,6 +1366,26 @@ concubin
        <Cell>
         <Container>
          <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="GB" variant=""></Language>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Text>Child</Text>
+            </Span>
+           </Translation>
+           <Translation>
+            <Language language="fr" country="FR" variant=""></Language>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Text>Enfant</Text>
+            </Span>
+           </Translation>
+          </Translations>
           <NumberingRef numberingId="1" level="1"></NumberingRef>
           <Style>
            <Align>left</Align>
@@ -846,6 +1466,52 @@ concubin
        <Cell>
         <Container>
          <Par>
+          <Translations>
+           <Translation>
+            <Language language="en" country="GB" variant=""></Language>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Text>Attached to </Text>
+            </Span>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Data>$ENFANT.REGIME_ENF.RATTACHE_BENEF</Data>
+            </Span>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Data>$ENFANT.REGIME_ENF.AUTRE</Data>
+             <Text> </Text>
+            </Span>
+           </Translation>
+           <Translation>
+            <Language language="fr" country="FR" variant=""></Language>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Text>Rattaché </Text>
+            </Span>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Data>$ENFANT.REGIME_ENF.RATTACHE_BENEF</Data>
+            </Span>
+            <Span>
+             <Style>
+              <FontSize>6.0pt</FontSize>
+             </Style>
+             <Data>$ENFANT.REGIME_ENF.AUTRE</Data>
+             <Text> </Text>
+            </Span>
+           </Translation>
+          </Translations>
           <Style>
            <Align>center</Align>
           </Style>
@@ -911,6 +1577,52 @@ concubin
      </TablePart>
     </Table>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>Member's mandatory scheme: </Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6500.0mpt</FontSize>
+         <TextColor>rgb(60,61,60)</TextColor>
+        </Style>
+        <Text></Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text> general  local  other . . . . . . . / spouse's  general  local  self-employed  other . . . . . . . . . .</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>Régime obligatoire de l’adhérent : </Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6500.0mpt</FontSize>
+         <TextColor>rgb(60,61,60)</TextColor>
+        </Style>
+        <Text></Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text> général  local  autre . . . . . . . / du conjoint  général  local  TNS/PI  autre . . . . . . . . . .</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -940,6 +1652,26 @@ concubin
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(1) Female = F - Male = M</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(1) Féminin = F - Masculin = M</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -948,6 +1680,26 @@ concubin
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(2) Copy the codes from the "managing organization" area appearing on your health insurance certificate; exchanges will occur automatically with the mandatory scheme.</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(2) Recopier les codes de la zone « organisme gestionnaire » figurant sur votre attestation vitale échanges se feront en automatique avec le régime obligatoire.</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -972,6 +1724,40 @@ concubin
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>PAYMENT METHOD</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>
+If direct debit from the member's bank account, specify:</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>MODALITE DE PAIEMENT</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>
+Si prélèvement sur le compte bancaire de l’adhérent, précisez :</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -995,6 +1781,66 @@ Si prélèvement sur le compte bancaire de l’adhérent, précisez :</Text>
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>Desired Frequency: </Text>
+        <InlineRadioButton valueIndex="0" groupId="peros" dataNode="$DATA.PERIODE_PAIEMENT"></InlineRadioButton>
+        <Text> Monthly </Text>
+        <InlineRadioButton valueIndex="1" groupId="peros" dataNode="$DATA.PERIODE_PAIEMENT"></InlineRadioButton>
+        <Text> Half-yearly </Text>
+        <InlineRadioButton valueIndex="2" groupId="peros" dataNode="$DATA.PERIODE_PAIEMENT"></InlineRadioButton>
+        <Text> Yearly
+Desired Day: </Text>
+        <InlineRadioButton valueIndex="0" groupId="jours" dataNode="$DATA.JOUR_PAIEMENT"></InlineRadioButton>
+        <Text> the 5th </Text>
+        <InlineRadioButton valueIndex="1" groupId="jours" dataNode="$DATA.JOUR_PAIEMENT"></InlineRadioButton>
+        <Text> the 10th </Text>
+        <InlineRadioButton valueIndex="2" groupId="jours" dataNode="$DATA.JOUR_PAIEMENT"></InlineRadioButton>
+        <Text> the 15th
+</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(Without specification, this will be done on the 5th of each month)</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>Périodicité souhaitée : </Text>
+        <InlineRadioButton valueIndex="0" groupId="peros" dataNode="$DATA.PERIODE_PAIEMENT"></InlineRadioButton>
+        <Text> Mensuelle </Text>
+        <InlineRadioButton valueIndex="1" groupId="peros" dataNode="$DATA.PERIODE_PAIEMENT"></InlineRadioButton>
+        <Text> Semestrielle </Text>
+        <InlineRadioButton valueIndex="2" groupId="peros" dataNode="$DATA.PERIODE_PAIEMENT"></InlineRadioButton>
+        <Text> Annuelle
+Jour souhaité : </Text>
+        <InlineRadioButton valueIndex="0" groupId="jours" dataNode="$DATA.JOUR_PAIEMENT"></InlineRadioButton>
+        <Text> le 5 </Text>
+        <InlineRadioButton valueIndex="1" groupId="jours" dataNode="$DATA.JOUR_PAIEMENT"></InlineRadioButton>
+        <Text> le 10 </Text>
+        <InlineRadioButton valueIndex="2" groupId="jours" dataNode="$DATA.JOUR_PAIEMENT"></InlineRadioButton>
+        <Text> le 15
+</Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>(Sans précision, celui-ci sera effectué au 5 de chaque mois)</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -1031,6 +1877,26 @@ Jour souhaité : </Text>
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>REQUIRED DOCUMENTS Please return your completed and signed request, accompanied by the following documents:</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>JUSTIFICATIFS À FOURNIR Retournez-nous votre demande complétée et signée, accompagnée des justificatifs suivants :</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -1039,6 +1905,32 @@ Jour souhaité : </Text>
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>5.0pt</FontSize>
+        </Style>
+        <Text>- photocopy of the recent mandatory scheme entitlement certificate for each insured person. If you do not have your paper certificate, it can be printed in our agencies upon presentation of the Vitale card,
+- if child over 20 years old in one of the following situations: student, apprentice, temp worker, job seeker, fixed-term contract, professional integration contract or if disabled child with an incapacity rate greater than or equal to 80% recognized by the French mandatory Health Insurance scheme: provide proof of the situation,
+- a bank account slip attached for the payment of your benefits,
+- if the "direct debit" payment mode is chosen: a bank, postal, or savings bank account statement and the completed and signed SEPA direct debit mandate.</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>5.0pt</FontSize>
+        </Style>
+        <Text>- photocopie de l’attestation papier d’ouverture de droit à votre Caisse de régime obligatoire récente pour chaque assuré. Si vous n’êtes pas en possession de votre attestation papier, elle peut être imprimée dans nos agences, sur simple présentation de la carte Vitale,
+- si enfant de plus de 20 ans dans l’une des situations suivantes : étudiant, apprenti, intérimaire, à la recherche d’un emploi, en contrat à durée déterminée, en contrat d’insertion professionnelle ou si enfant handicapé ayant un taux d’incapacité supérieur ou égal à 80 % reconnu par le régime d’Assurance maladie obligatoire français : fournir les justificatifs de la situation,
+- un RIB joint pour le versement de vos prestations,
+- si le mode de paiement « prélèvement » est choisi : un relevé d’identité bancaire, postal ou de Caisse d’épargne et le mandat de prélèvement SEPA rempli et signé.</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>5.0pt</FontSize>
@@ -1058,6 +1950,26 @@ Jour souhaité : </Text>
      </Span>
     </Par>
     <Par>
+     <Translations>
+      <Translation>
+       <Language language="en" country="GB" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>DATA PROTECTION &amp; PRIVACY</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="fr" country="FR" variant=""></Language>
+       <Span>
+        <Style>
+         <FontSize>6.0pt</FontSize>
+        </Style>
+        <Text>INFORMATIQUE ET LIBERTÉS</Text>
+       </Span>
+      </Translation>
+     </Translations>
      <Span>
       <Style>
        <FontSize>6.0pt</FontSize>
@@ -1081,6 +1993,26 @@ Jour souhaité : </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>5.0pt</FontSize>
+            </Style>
+            <Text>The information collected on this form is processed automatically to enable the management of your membership and the affiliation of your beneficiaries. The "telephone, mobile phone, marital status, e-mail" data are requested on an optional basis, while all other data are essential for processing your membership. They are intended for the mutual insurance company, the insurance organizations with which the mutual insurance company has taken out a collective contract, any subcontractors and service providers involved in the management of the contract as well as, where applicable, our reinsurers and used for the purposes and according to the storage and hosting methods specified</Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>5.0pt</FontSize>
+            </Style>
+            <Text>Les informations recueillies sur ce bulletin font l’objet d’un traitement automatisé pour permettre la gestion de votre adhésion et l’affiliation de vos ayants droit. Les données « téléphone, téléphone portable, situation familiale, e-mail » sont demandées à titre facultatif, l’ensemble des autres données étant indispensable au traitement de votre et adhésion. Elles sont destinées à la mutuelle, aux organismes assureurs auprès desquels la mutuelle a souscrit un contrat collectif, aux éventuels sous-traitants et prestataires impliqués dans la gestion du contrat ainsi que le cas échéant à nos réassureurs et utilisées aux fins et selon les modalités de conservation et d’hébergement précisées</Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Span>
           <Style>
            <FontSize>5.0pt</FontSize>
@@ -1103,6 +2035,26 @@ Jour souhaité : </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>5.0pt</FontSize>
+            </Style>
+            <Text>(including commercial) of the contract as well as to guarantee the legal obligations of the Mutual (fight against fraud, fight against money laundering and terrorist financing). Your personal information may be used subsequently for commercial prospecting purposes by post or telephone, unless you object by checking the boxes opposite. Furthermore, you can also register at any time on the telephone marketing opposition list (bloctel.gouv.fr). In accordance with current regulations, you, as well as your beneficiaries, have a right of access, rectification or portability of your personal data, and can decide on their fate after the mutualist regulations and/or the information notice, of placing</Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>5.0pt</FontSize>
+            </Style>
+            <Text>(y compris commerciale) du contrat ainsi que pour garantir les obligations légales de la Mutuelle (lutte contre les fraudes, lutte contre le blanchiment des capitaux et le financement du terrorisme). Vos informations personnelles pourront être utilisées ultérieurement à des fins de prospection commerciale par courriers postaux, téléphone, sauf si vous vous y opposez en cochant les cases ci-contre. Par ailleurs, vous pouvez également à tout moment vous inscrire sur la liste d’opposition au démarchage téléphonique (bloctel.gouv.fr). Conformément à la réglementation en vigueur, vous, ainsi que vos ayants droit, disposez d’un droit d’accès, de rectification ou de portabilité de vos données personnelles, et pouvez décider de leur sort après au règlement mutualiste et/ou à la notice d’information, de passation</Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Span>
           <Style>
            <FontSize>5.0pt</FontSize>
@@ -1125,6 +2077,26 @@ Jour souhaité : </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>5.0pt</FontSize>
+            </Style>
+            <Text>and management of your death. You also have, for legitimate reasons, a right to limitation of processing, a right to withdraw your consent, a right to erasure and a right to object. You can exercise your rights with the Data Protection Officer of the Mutual by email at the address XXXX or by post addressed to XXXX by attaching a copy of your proof of identity to your request. In the event of complaints relating to the processing of your personal data and the exercise of your rights, you can refer the matter to the Commission Nationale Informatique et Libertés (CNIL) 3 place de Fontenoy – TSA 80715 – 75334 Paris</Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>5.0pt</FontSize>
+            </Style>
+            <Text>et de gestion votre décès. Vous disposez en outre, pour des motifs légitimes d’un droit à la limitation des traitements, d’un droit au retrait de votre consentement, d’un droit à l’effacement et d’un droit d’opposition. Vous pouvez exercer vos droits auprès du Responsable Protection des données – Data Protection Officer – de la Mutuelle par mail àl’adresse XXXX ou par courrier postal adressé à XXXX en joignant à votre demande une copie de votre justificatif d’identité. En cas de réclamations relatives au traitement de vos données personnelles et à l’exercice de vos droits, vous pouvez saisir la Commission Nationale Informatique et Libertés (CNIL) 3 place de Fontenoy – TSA 80715 – 75334 Pari</Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Span>
           <Style>
            <FontSize>5.0pt</FontSize>
@@ -1150,6 +2122,32 @@ Jour souhaité : </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Done on </Text>
+            <Data editable="true">$DATA.DATE_FAIT</Data>
+            <Text> at </Text>
+            <Data editable="true">$DATA.VILLE</Data>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Fait le </Text>
+            <Data editable="true">$DATA.DATE_FAIT</Data>
+            <Text> à </Text>
+            <Data editable="true">$DATA.VILLE</Data>
+           </Span>
+          </Translation>
+         </Translations>
          <Span>
           <Style>
            <FontSize>6.0pt</FontSize>
@@ -1173,6 +2171,26 @@ Jour souhaité : </Text>
        </Style>
        <Container>
         <Par>
+         <Translations>
+          <Translation>
+           <Language language="en" country="GB" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Member's Signature	</Text>
+           </Span>
+          </Translation>
+          <Translation>
+           <Language language="fr" country="FR" variant=""></Language>
+           <Span>
+            <Style>
+             <FontSize>6.0pt</FontSize>
+            </Style>
+            <Text>Signature de l’adhérent	</Text>
+           </Span>
+          </Translation>
+         </Translations>
          <Span>
           <Style>
            <FontSize>6.0pt</FontSize>
@@ -1197,13 +2215,39 @@ Jour souhaité : </Text>
      <VisibleIf><![CDATA[$DATA.typemutuel.valueOf()=="KW"]]></VisibleIf>
      <DataDefinition></DataDefinition>
      <Par>
+      <Translations>
+       <Translation>
+        <Language language="en" country="GB" variant=""></Language>
+        <Span>
+         <Style>
+          <FontSize>4.0pt</FontSize>
+         </Style>
+         <Text>KWS , mutual insurance company subject to the provisions of Book II of the Mutual Insurance Code, registered in the Sirene directory under Siren number XXX XXX XXX , LEI number XXXXXXXXXXXXXX. Registered office: 10 rue de la Liberté 95500 ICY 
+KWS is insured by XXXXX XXXX XXX, FED Assistance subject to the provisions of Book II of the Mutual Insurance Code, registered in the Sirene directory under SIREN number XXX XXX XXX, 
+LEI number XXXXXXXXX. Registered office: 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique is insured by YYYYY Assurances, registered office: 10 Allée des enfants rouges - 69002Lyon. 
+Public Limited Company with a capital of €9,999,999. Company governed by the Insurance Code. RCS Lyon 000 000 000 B. LEI Number XXXXXXXXXXXX </Text>
+        </Span>
+       </Translation>
+       <Translation>
+        <Language language="fr" country="FR" variant=""></Language>
+        <Span>
+         <Style>
+          <FontSize>4.0pt</FontSize>
+         </Style>
+         <Text>KWS , mutuelle soumise aux dispositions du livre II du Code de la Mutualité, immatriculée au répertoire Sirene sous le numéro Siren XXX XXX XXX , numéro LEI XXXXXXXXXXXXXX. Siège social : 10 rue de la Liberté 95500 ICY 
+KWS est assurée par XXXXX XXXX XXX, FED Assistance soumise aux dispositions du livre II du code de la mutualité, immatriculée au répertoire Sirène sous le numéro SIREN XXX XXX XXX, 
+numéro LEI XXXXXXXXX. Siège social : 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique est assurée par YYYYY Assurances, siège social : 10 Allée des enfants rouges - 69002Lyon. 
+Société Anonyme au capital de 9 999 999 €. Entreprise régie par le Code des Assurances. RCS Lyon 000 000 000 B. Numéro LEI XXXXXXXXXXXX </Text>
+        </Span>
+       </Translation>
+      </Translations>
       <Span>
        <Style>
         <FontSize>4.0pt</FontSize>
        </Style>
-       <Text>KWS , mutuelle soumise aux dispositions du livre II du Code de la Mutualité, immatriculée au répertoire Sirene sous le numéro Siren XXX XXX XXX , numéro LEI XXXXXXXXXXXXXX. Siège social : 10 rue de la Liberté 95500 ICY 
-KWS est assurée par XXXXX XXXX XXX, FED Assistance soumise aux dispositions du livre II du code de la mutualité, immatriculée au répertoire Sirène sous le numéro SIREN XXX XXX XXX, 
-numéro LEI XXXXXXXXX. Siège social : 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique est assurée par YYYYY Assurances, siège social : 10 Allée des enfants rouges - 69002Lyon. 
+       <Text>KWS , mutuelle soumise aux dispositions du livre II du Code de la Mutualité, immatriculée au répertoire Sirene sous le numéro Siren XXX XXX XXX , numéro LEI XXXXXXXXXXXXXX. Siège social : 10 rue de la Liberté 95500 ICY 
+KWS est assurée par XXXXX XXXX XXX, FED Assistance soumise aux dispositions du livre II du code de la mutualité, immatriculée au répertoire Sirène sous le numéro SIREN XXX XXX XXX, 
+numéro LEI XXXXXXXXX. Siège social : 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique est assurée par YYYYY Assurances, siège social : 10 Allée des enfants rouges - 69002Lyon. 
 Société Anonyme au capital de 9 999 999 €. Entreprise régie par le Code des Assurances. RCS Lyon 000 000 000 B. Numéro LEI XXXXXXXXXXXX </Text>
       </Span>
      </Par>
@@ -1212,13 +2256,39 @@ Société Anonyme au capital de 9 999 999 €. Entreprise régie par le Code des
      <VisibleIf><![CDATA[$DATA.typemutuel.valueOf()=="KW Mutuelle"]]></VisibleIf>
      <DataDefinition></DataDefinition>
      <Par>
+      <Translations>
+       <Translation>
+        <Language language="en" country="GB" variant=""></Language>
+        <Span>
+         <Style>
+          <FontSize>4.0pt</FontSize>
+         </Style>
+         <Text>KWS Mutuelle, mutual insurance company subject to the provisions of Book II of the Mutual Insurance Code, registered in the Sirene directory under Siren number XXX XXX XXX , LEI number XXXXXXXXXXXXXX. Registered office: 10 rue de la Liberté 95500 ICY 
+KWS Santé Services is insured by XXXXX XXXX XXX, FED Assistance subject to the provisions of Book II of the Mutual Insurance Code, registered in the Sirene directory under SIREN number XXX XXX XXX, 
+LEI number XXXXXXXXX. Registered office: 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique is insured by YYYYY Assurances, registered office: 10 Allée des enfants rouges - 69002Lyon. 
+Public Limited Company with a capital of €9,999,999. Company governed by the Insurance Code. RCS Lyon 000 000 000 B. LEI Number XXXXXXXXXXXX </Text>
+        </Span>
+       </Translation>
+       <Translation>
+        <Language language="fr" country="FR" variant=""></Language>
+        <Span>
+         <Style>
+          <FontSize>4.0pt</FontSize>
+         </Style>
+         <Text>KWS Mutuelle, mutuelle soumise aux dispositions du livre II du Code de la Mutualité, immatriculée au répertoire Sirene sous le numéro Siren XXX XXX XXX , numéro LEI XXXXXXXXXXXXXX. Siège social : 10 rue de la Liberté 95500 ICY 
+KWS Santé Services est assurée par XXXXX XXXX XXX, FED Assistance soumise aux dispositions du livre II du code de la mutualité, immatriculée au répertoire Sirène sous le numéro SIREN XXX XXX XXX, 
+numéro LEI XXXXXXXXX. Siège social : 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique est assurée par YYYYY Assurances, siège social : 10 Allée des enfants rouges - 69002Lyon. 
+Société Anonyme au capital de 9 999 999 €. Entreprise régie par le Code des Assurances. RCS Lyon 000 000 000 B. Numéro LEI XXXXXXXXXXXX </Text>
+        </Span>
+       </Translation>
+      </Translations>
       <Span>
        <Style>
         <FontSize>4.0pt</FontSize>
        </Style>
-       <Text>KWS Mutuelle, mutuelle soumise aux dispositions du livre II du Code de la Mutualité, immatriculée au répertoire Sirene sous le numéro Siren XXX XXX XXX , numéro LEI XXXXXXXXXXXXXX. Siège social : 10 rue de la Liberté 95500 ICY 
-KWS Santé Services est assurée par XXXXX XXXX XXX, FED Assistance soumise aux dispositions du livre II du code de la mutualité, immatriculée au répertoire Sirène sous le numéro SIREN XXX XXX XXX, 
-numéro LEI XXXXXXXXX. Siège social : 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique est assurée par YYYYY Assurances, siège social : 10 Allée des enfants rouges - 69002Lyon. 
+       <Text>KWS Mutuelle, mutuelle soumise aux dispositions du livre II du Code de la Mutualité, immatriculée au répertoire Sirene sous le numéro Siren XXX XXX XXX , numéro LEI XXXXXXXXXXXXXX. Siège social : 10 rue de la Liberté 95500 ICY 
+KWS Santé Services est assurée par XXXXX XXXX XXX, FED Assistance soumise aux dispositions du livre II du code de la mutualité, immatriculée au répertoire Sirène sous le numéro SIREN XXX XXX XXX, 
+numéro LEI XXXXXXXXX. Siège social : 159 rue du Chemin Vert 45000 BLOIS cedex. LKS Protection Juridique est assurée par YYYYY Assurances, siège social : 10 Allée des enfants rouges - 69002Lyon. 
 Société Anonyme au capital de 9 999 999 €. Entreprise régie par le Code des Assurances. RCS Lyon 000 000 000 B. Numéro LEI XXXXXXXXXXXX </Text>
       </Span>
      </Par>

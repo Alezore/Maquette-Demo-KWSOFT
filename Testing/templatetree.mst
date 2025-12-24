@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<folder id="117A2A95" name="Modèles de documents" sortorder="custom"/>
+<folder id="117A2A95"
+        name="%Label0001;Modèles de documents"
+        sortorder="custom"/>
