@@ -28,7 +28,7 @@
       </DataNode>
       <DataNode name="P_GARANTIR">
        <DataNode name="S_ADH">
-        <Value><![CDATA[string:None]]></Value>
+        <Value><![CDATA[string:]]></Value>
        </DataNode>
       </DataNode>
      </DataNode>
@@ -38,7 +38,7 @@
        <Value><![CDATA[string:Created]]></Value>
       </DataNode>
       <DataNode name="ValidationState" valueChanged="manually">
-       <Value><![CDATA[string:OK]]></Value>
+       <Value><![CDATA[string:ERROR]]></Value>
       </DataNode>
       <DataNode name="Editor">
        <Value><![CDATA[string:]]></Value>
@@ -57,15 +57,13 @@
       </DataNode>
      </DataNode>
     </Data>
-    <ContainerPartInstance partIndex="0"></ContainerPartInstance>
-    <ContainerPartInstance partIndex="1"></ContainerPartInstance>
-    <TablePartInstance partIndex="2"></TablePartInstance>
-    <TablePartInstance partIndex="3">
-     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
-     <ContainerPartInstance partIndex="1"></ContainerPartInstance>
-    </TablePartInstance>
-    <ContainerPartInstance partIndex="4"></ContainerPartInstance>
-    <ContainerPartInstance partIndex="5"></ContainerPartInstance>
+    <ContainerPartInstance partIndex="0" visible="false"></ContainerPartInstance>
+    <ContainerPartInstance partIndex="1" visible="false"></ContainerPartInstance>
+    <TablePartInstance partIndex="2" visible="false"></TablePartInstance>
+    <TablePartInstance partIndex="3" visible="false"></TablePartInstance>
+    <ContainerPartInstance partIndex="4" visible="false"></ContainerPartInstance>
+    <ContainerPartInstance partIndex="5" visible="false"></ContainerPartInstance>
+    <ContainerPartInstance partIndex="6" visible="false"></ContainerPartInstance>
    </RootPartInstance>
   </Root>
   <DataSourceProperties>

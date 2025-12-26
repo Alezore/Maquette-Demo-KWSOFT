@@ -777,11 +777,15 @@ genre;</Script>
          searchable="false">
       <Settings>
          <Validation allow-empty-value="true"
-                     dialog-field=""
+                     dialog-field="RADIOGROUP"
                      label=""
                      operator="ANY"
-                     validation-type="ANY_VALUE">
-            <Values/>
+                     validation-type="LIST">
+            <Values>
+               <Value content="Mensuelle" valId="1"/>
+               <Value content="Semestrielle" valId="2"/>
+               <Value content="Annuelle" valId="3"/>
+            </Values>
          </Validation>
          <Script/>
       </Settings>
@@ -793,11 +797,15 @@ genre;</Script>
          searchable="false">
       <Settings>
          <Validation allow-empty-value="true"
-                     dialog-field=""
+                     dialog-field="RADIOGROUP"
                      label=""
                      operator="ANY"
-                     validation-type="ANY_VALUE">
-            <Values/>
+                     validation-type="LIST">
+            <Values>
+               <Value content="5" valId="1"/>
+               <Value content="10" valId="2"/>
+               <Value content="15" valId="3"/>
+            </Values>
          </Validation>
          <Script/>
       </Settings>
