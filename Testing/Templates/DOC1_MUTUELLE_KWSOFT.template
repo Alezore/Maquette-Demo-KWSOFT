@@ -2293,12 +2293,22 @@ Société Anonyme au capital de 9 999 999 €. Entreprise régie par le Code des
       </Span>
      </Par>
     </ContainerPart>
-    <ContainerPart>
-     <VisibleIf><![CDATA[$DATA.PERIODE_PAIEMENT.valueOf()=="Mensuelle"]]></VisibleIf>
-     <DataDefinition></DataDefinition>
-     <Image uri="mtx:Images/DOC1_MUTUELLE_KWSOFT_V1-0.pdf"></Image>
-    </ContainerPart>
    </Container>
   </Section>
+  <DocumentPart>
+   <VisibleIf><![CDATA[$DATA.PERIODE_PAIEMENT.valueOf()=="Mensuelle"]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <AttachmentSection url="mtx:Images/1_Series M.pdf"></AttachmentSection>
+  </DocumentPart>
+  <DocumentPart>
+   <VisibleIf><![CDATA[$DATA.PERIODE_PAIEMENT.valueOf()=="Semestrielle"]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <AttachmentSection url="mtx:Images/2_Content Composition with MTEXT.pdf"></AttachmentSection>
+  </DocumentPart>
+  <DocumentPart>
+   <VisibleIf><![CDATA[$DATA.PERIODE_PAIEMENT.valueOf()=="Annuelle"]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <AttachmentSection url="mtx:Images/3_Omnichannel Output Management with MOMS.pdf"></AttachmentSection>
+  </DocumentPart>
  </Document>
 </RootPart>

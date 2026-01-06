@@ -31,6 +31,9 @@
         <Value><![CDATA[string:]]></Value>
        </DataNode>
       </DataNode>
+      <DataNode name="typemutuel" valueChanged="manually">
+       <Value><![CDATA[string:KW Mutuelle]]></Value>
+      </DataNode>
      </DataNode>
      <DataNode name="Metadata">
       <Value><![CDATA[string:]]></Value>
@@ -58,12 +61,14 @@
      </DataNode>
     </Data>
     <ContainerPartInstance partIndex="0" visible="false"></ContainerPartInstance>
-    <ContainerPartInstance partIndex="1" visible="false"></ContainerPartInstance>
+    <ContainerPartInstance partIndex="1"></ContainerPartInstance>
     <TablePartInstance partIndex="2" visible="false"></TablePartInstance>
     <TablePartInstance partIndex="3" visible="false"></TablePartInstance>
     <ContainerPartInstance partIndex="4" visible="false"></ContainerPartInstance>
-    <ContainerPartInstance partIndex="5" visible="false"></ContainerPartInstance>
-    <ContainerPartInstance partIndex="6" visible="false"></ContainerPartInstance>
+    <ContainerPartInstance partIndex="5"></ContainerPartInstance>
+    <DocumentPartInstance partIndex="6" visible="false"></DocumentPartInstance>
+    <DocumentPartInstance partIndex="7" visible="false"></DocumentPartInstance>
+    <DocumentPartInstance partIndex="8" visible="false"></DocumentPartInstance>
    </RootPartInstance>
   </Root>
   <DataSourceProperties>
