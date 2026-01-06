@@ -342,7 +342,7 @@
             <Script/>
          </Settings>
       </Node>
-      <Node data-type="TEXT"
+      <Node data-type="DATETIME"
             hierarchical="FLAT"
             multiple="false"
             name="DATE_EMBAUCHE"
@@ -352,9 +352,14 @@
                         dialog-field=""
                         label=""
                         operator="ANY"
-                        validation-type="ANY_VALUE">
-               <Values/>
-            </Validation>
+                        validation-type="DATE"/>
+            <Format>
+               <Input date-format="dd/MM/yyyy"/>
+               <Output date-format="dd/MM/yyyy"
+                       date-style="2"
+                       date-type="DATE"
+                       use-current-locale="false"/>
+            </Format>
             <Script/>
          </Settings>
       </Node>
@@ -368,8 +373,11 @@
                         dialog-field=""
                         label=""
                         operator="ANY"
-                        validation-type="ANY_VALUE">
-               <Values/>
+                        validation-type="LIST">
+               <Values>
+                  <Value content="Cadre" valId="1"/>
+                  <Value content="Employé" valId="2"/>
+               </Values>
             </Validation>
             <Script/>
          </Settings>

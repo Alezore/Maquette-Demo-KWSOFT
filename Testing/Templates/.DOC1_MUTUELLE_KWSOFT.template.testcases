@@ -37,6 +37,9 @@
      </DataNode>
      <DataNode name="Metadata">
       <Value><![CDATA[string:]]></Value>
+      <DataNode name="DocumentLanguage" valueChanged="fromDataSource">
+       <Value><![CDATA[string:FRA]]></Value>
+      </DataNode>
       <DataNode name="State" valueChanged="fromDataSource">
        <Value><![CDATA[string:Created]]></Value>
       </DataNode>
@@ -52,9 +55,6 @@
         <Value><![CDATA[string:]]></Value>
        </DataNode>
       </DataNode>
-      <DataNode name="DocumentLanguage" valueChanged="fromDataSource">
-       <Value><![CDATA[string:]]></Value>
-      </DataNode>
       <DataNode name="InitialDataBinding" valueChanged="fromDataSource">
        <Value><![CDATA[string:\library\Testing\Templates\DOC1_MUTUELLE_KWSOFT.template]]></Value>
       </DataNode>
@@ -63,7 +63,10 @@
     <ContainerPartInstance partIndex="0" visible="false"></ContainerPartInstance>
     <ContainerPartInstance partIndex="1"></ContainerPartInstance>
     <TablePartInstance partIndex="2" visible="false"></TablePartInstance>
-    <TablePartInstance partIndex="3" visible="false"></TablePartInstance>
+    <TablePartInstance partIndex="3" visible="false">
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+     <ContainerPartInstance partIndex="1"></ContainerPartInstance>
+    </TablePartInstance>
     <ContainerPartInstance partIndex="4" visible="false"></ContainerPartInstance>
     <ContainerPartInstance partIndex="5"></ContainerPartInstance>
     <DocumentPartInstance partIndex="6" visible="false"></DocumentPartInstance>

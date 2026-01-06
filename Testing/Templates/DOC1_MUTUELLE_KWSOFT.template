@@ -628,7 +628,7 @@ E-mail </Text>
           <Text> Date d’embauche </Text>
           <Data editable="true">$DATA.ID_ADHERENT.DATE_EMBAUCHE</Data>
           <Text> Catégorie </Text>
-          <Data>$DATA.ID_ADHERENT.CATEGORIE</Data>
+          <Data editable="true">$DATA.ID_ADHERENT.CATEGORIE</Data>
          </Span>
         </Par>
        </Container>
@@ -2198,10 +2198,40 @@ Jour souhaité : </Text>
           <Text>Signature de l’adhérent	</Text>
          </Span>
         </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell>
+       <Style>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
         <Image>
          <DataUri ifNotExist="omit" alternativeUri=""><![CDATA[$DATA.SIGNATURE]]></DataUri>
          <Style>
-          <WrapText>start</WrapText>
           <FillContainerWidth>true</FillContainerWidth>
           <FillContainerHeight>false</FillContainerHeight>
           <Stretch>keep_aspect_ratio</Stretch>
