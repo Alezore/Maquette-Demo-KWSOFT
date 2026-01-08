@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content>
    <entry name="/Metadata.metadataembedded">
-      <DataModel/>
+      <DataModel>
+         <Node can-overwrite="true"
+               data-type="TEXT"
+               hierarchical="FLAT"
+               meta-restype="1"
+               meta-restype-docinst="1"
+               multiple="false"
+               name="DocumentLanguage"
+               searchable="false">
+            <Settings>
+               <Description>Langue du document</Description>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE"/>
+               <Script/>
+            </Settings>
+         </Node>
+      </DataModel>
    </entry>
    <entry name="/dataProviders/Metadata">
       <SerializedDataProvider providerClass="de.kwsoft.mtext.format.dataprovider.MetadataNodeInstance">
          <DataModelResourceName name="~\Metadata.metadataembedded"/>
-         <NodeInst name="Metadata" value=""/>
+         <NodeInst name="Metadata" value="">
+            <Children>
+               <NodeInst name="DocumentLanguage" value="FRA"/>
+            </Children>
+         </NodeInst>
       </SerializedDataProvider>
    </entry>
 </content>

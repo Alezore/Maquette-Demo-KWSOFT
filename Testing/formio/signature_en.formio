@@ -1,0 +1,20 @@
+{
+    "components": [
+        {
+            "label": "Signature",
+            "footer": "sign above",
+            "tableView": false,
+            "key": "SIGNATURE",
+            "type": "signature",
+            "input": true
+        },
+        {
+            "type": "button",
+            "label": "Submit",
+            "key": "submit",
+            "disableOnInvalid": true,
+            "input": true,
+            "tableView": false
+        }
+    ]
+}
