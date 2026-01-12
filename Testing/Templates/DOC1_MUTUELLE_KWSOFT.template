@@ -9,6 +9,7 @@
  <UIContribution>
   <GuideArea>
    <ActionLink title="Formulaire Tableau" inputAreaGroupID="">
+    <VisibleIf><![CDATA[$Metadata.DocumentLanguage=="FRA"]]></VisibleIf>
     <Script><![CDATA[			var form = $context.FormIO.createForm('formio/tableau_adherent.formio');
 			var title="Formulaire Tableau";
 			var options={'title' : title,
@@ -17,8 +18,27 @@
 				$context.showForm(form, $DATA.P_GARANTIR, options);]]></Script>
    </ActionLink>
    <ActionLink title="Formulaire Signature" inputAreaGroupID="">
+    <VisibleIf><![CDATA[$Metadata.DocumentLanguage=="FRA"]]></VisibleIf>
     <Script><![CDATA[				var form = $context.FormIO.createForm('formio/signature.formio');
 				var title="Formulaire Signature";
+				var options={'title' : title,
+						'height' : '500',
+						'width' : 1000};
+					$context.showForm(form, $DATA, options);]]></Script>
+   </ActionLink>
+   <ActionLink title="Table Form" inputAreaGroupID="">
+    <VisibleIf><![CDATA[$Metadata.DocumentLanguage=="ENG"]]></VisibleIf>
+    <Script><![CDATA[			var form = $context.FormIO.createForm('formio/tableau_adherent_en.formio');
+			var title="Table Form";
+			var options={'title' : title,
+					'height' : '800',
+					'width' : 1500};
+				$context.showForm(form, $DATA.P_GARANTIR, options);]]></Script>
+   </ActionLink>
+   <ActionLink title="Signature Form" inputAreaGroupID="">
+    <VisibleIf><![CDATA[$Metadata.DocumentLanguage=="ENG"]]></VisibleIf>
+    <Script><![CDATA[				var form = $context.FormIO.createForm('formio/signature_en.formio');
+				var title="Signature Form";
 				var options={'title' : title,
 						'height' : '500',
 						'width' : 1000};
